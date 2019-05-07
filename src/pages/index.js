@@ -1,8 +1,8 @@
 import React from "react"
-import Image from "../components/utils/Image"
 import { LinearProgress, Card, CardContent } from "@material-ui/core"
 
 import NavBar from "../components/NavBar"
+import GatsbyAstronaut from "../images/gatsby-astronaut.png"
 import "../style/index.css"
 
 const IndexPage = () => (
@@ -10,7 +10,7 @@ const IndexPage = () => (
     <NavBar />
     <Card className="rotate-div">
       <CardContent>
-        <Image className="rotate-infinite" />
+        <img className="rotate-infinite" src={GatsbyAstronaut} />
       </CardContent>
       <LinearProgress color="primary" />
     </Card>
