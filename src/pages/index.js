@@ -1,17 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
+import Image from "../components/utils/Image"
+import { LinearProgress, Card, CardContent } from "@material-ui/core"
 
-import { CircularProgress } from "@material-ui/core"
-import TrumpImage from "../images/dtrump.png"
+import NavBar from "../components/NavBar"
 import "../style/index.css"
+
 const IndexPage = () => (
   <React.Fragment>
-    <div class="rotate-div">
-      <img class="rotate-infinite" src={TrumpImage} />
-      <br />
-      <br />
-      <CircularProgress color="primary" />
-    </div>
+    <NavBar />
+    <Card className="rotate-div">
+      <CardContent>
+        <Image className="rotate-infinite" />
+      </CardContent>
+      <LinearProgress color="primary" />
+    </Card>
   </React.Fragment>
 )
 

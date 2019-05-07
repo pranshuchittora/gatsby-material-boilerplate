@@ -1,21 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center{
+  text-align: center;
+}
+
 .rotate-div {
+
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  min-width: 300px;
+  width: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .rotate-infinite {
-  animation: rotation 2s infinite alternate-reverse;
+  animation: rotation 2s infinite ;
   width: 200px;
 }
 
 @keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
+  0% {
+    -webkit-transform: rotate(-15deg);
   }
-  to {
-    -webkit-transform: rotate(359deg);
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  75% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
   }
 }
